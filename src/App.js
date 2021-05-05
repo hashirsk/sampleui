@@ -61,7 +61,7 @@ class App extends React.Component {
         Redirecting..
       </div>
     ) : (
-      <div>Getting the location data&hellip; </div>
+      <div>Please wait </div>
     );
   }
 }
