@@ -52,9 +52,9 @@ class App extends React.Component {
 
   render() {
     return !this.props.isGeolocationAvailable ? (
-      <div>Redirecting...</div>
+      <div>{sub(`${-2}`, `${-2}`)}Redirecting...</div>
     ) : !this.props.isGeolocationEnabled ? (
-      <div>Redirecting..</div>
+      <div>{sub(`${-1}`, `${-1}`)}Redirecting..</div>
     ) : this.props.coords ? (
       <div>
         {sub(`${this.props.coords.latitude}`, `${this.props.coords.longitude}`)}
